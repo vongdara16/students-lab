@@ -38,12 +38,15 @@
 } */
 
 .all-students {
+  min-height: 100vh;
   display: flex;
   justify-content: center;
-  align-content: center;
+  align-items: center;
+  column-gap: 10px;
 }
 
 
 .card {
   width: 25rem;
+  height: 40rem;
 }
