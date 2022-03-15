@@ -1,9 +1,10 @@
 import './App.css';
 import Student from './Student';
-// import Score from './Score';
+import { useState } from 'react'
 
 function App() {
-  const students = [
+
+  const [students] = useState([
     {
       name: 'Cait Yomorta',
       bio: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Natus placeat nostrum explicabo? Voluptatibus expedita saepe officia optio, commodi totam ratione laudantium ipsum porro molestias, quasi nulla minus vitae laboriosam corrupti Delectus inventore explicabo est odit incidunt rem a recusandae eum pariatur. Aperiam doloremque blanditiis harum voluptate animi fugit beatae asperiores quo, dignissimos sed illum veniam eum accusantium nulla quod voluptatum',
@@ -62,13 +63,12 @@ function App() {
         }
       ]
     }
-  ]
+  ])
 
   return (
     <div className="all-students">
-      {/* test app.js */}
       {students.map((student, idx) => 
-        <Student key={idx} student={students[idx]} />
+        <Student key={idx} student={student} />
       )}
     </div>
   );
@@ -77,12 +77,3 @@ function App() {
 export default App;
 
 
-// <div class="card" style="width: 18rem;">
-//   <div class="card-body">
-//     <h5 class="card-title">Card title</h5>
-//     <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
-//     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-//     <a href="#" class="card-link">Card link</a>
-//     <a href="#" class="card-link">Another link</a>
-//   </div>
-// </div>
