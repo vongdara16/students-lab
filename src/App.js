@@ -1,5 +1,6 @@
 import './App.css';
 import Student from './Student';
+// import Score from './Score';
 
 function App() {
   const students = [
