@@ -36,3 +36,14 @@
     transform: rotate(360deg);
   }
 } */
+
+.all-students {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+
+.card {
+  width: 25rem;
+}
