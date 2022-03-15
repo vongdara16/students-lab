@@ -67,7 +67,7 @@ function App() {
     <div className="">
       test app.js
       {students.map((student, idx) => 
-        <Student key={idx} name={students[idx].name} />
+        <Student key={idx} student={students[idx]} />
       )}
     </div>
   );
